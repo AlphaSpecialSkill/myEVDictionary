@@ -1,0 +1,2 @@
+# myEVDictionary
+Eng-viet dictionary
