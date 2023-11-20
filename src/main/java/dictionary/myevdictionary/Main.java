@@ -7,12 +7,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
+import java.net.URL;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        AnchorPane root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("View/mainPage.fxml")));
+        AnchorPane root = FXMLLoader.load(getClass().getResource("controller/main-page.fxml"));
         Scene scene = new Scene(root, 900, 600);
         stage.setTitle("Dictionary");
         stage.setScene(scene);

@@ -4,6 +4,11 @@ public class Word {
     private String word;
     private String def;
 
+    public Word() {
+        word = "";
+        def = "";
+    }
+
     public Word(String word, String def) {
         this.word = word;
         this.def = def;
