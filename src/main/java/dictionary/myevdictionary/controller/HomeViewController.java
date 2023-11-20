@@ -32,7 +32,7 @@ public class HomeViewController implements Initializable {
     private static final String SPLITTING_CHARACTERS = "<html>";
 
     @FXML
-    protected HBox content;
+    protected VBox content;
 
     @FXML
     protected AnchorPane homeViewPane;
@@ -41,16 +41,13 @@ public class HomeViewController implements Initializable {
     protected ListView<String> listView;
 
     @FXML
-    protected HBox search;
+    protected VBox search;
 
     @FXML
     protected TextField searchbar;
 
     @FXML
-    protected Button searchbtn;
-
-    @FXML
-    protected VBox vboxHome;
+    protected HBox hboxHome;
 
     @FXML
     protected WebView definitionView;
@@ -146,6 +143,4 @@ public class HomeViewController implements Initializable {
         enterKeyPressed();
         searchbarInput();
     }
-
-
 }
