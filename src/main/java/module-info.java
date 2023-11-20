@@ -3,9 +3,9 @@ module dictionary.myevdictionary {
     requires javafx.fxml;
     requires javafx.web;
 
+    exports dictionary.myevdictionary.controller;
 
-    opens dictionary.myevdictionary to javafx.fxml;
+    opens dictionary.myevdictionary.controller to javafx.fxml;
     exports dictionary.myevdictionary;
-    exports dictionary.myevdictionary.Controller;
-    opens dictionary.myevdictionary.Controller to javafx.fxml;
+    opens dictionary.myevdictionary to javafx.fxml;
 }
