@@ -1,6 +1,6 @@
 package dictionary.myevdictionary.Model;
 
-public class Word {
+public class Word implements Comparable<Word>{
     private String word;
     private String def;
 
@@ -28,5 +28,9 @@ public class Word {
 
     public void setDef(String def) {
         this.def = def;
+    }
+
+    public int compareTo(Word other) {
+        return this.word.compareToIgnoreCase(other.word);
     }
 }
