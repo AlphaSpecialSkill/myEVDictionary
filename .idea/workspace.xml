@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="my EV dictionary">
+    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="Thay đổi khung UI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries_out.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/spelling.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,12 +39,26 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlphaSpecialSkill&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d624de19-d719-4712-bd65-548e698f38f4" />
+        <option name="url" value="https://github.com/AlphaSpecialSkill/myEVDictionary.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2XQDNCaTDYfoPzadibvwoA2WH2B" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,7 +72,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/UET_courses/OOP/exercises/BTL/myEVDictionary",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/UET_courses/OOP/exercises/BTL/myEVDictionary/src/main/resources/dictionary/myevdictionary/data",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -62,12 +82,13 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.40229884",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\data" />
       <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\Data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -119,7 +140,13 @@
       <workItem from="1700473897022" duration="1061000" />
       <workItem from="1700474985535" duration="34000" />
       <workItem from="1700475081930" duration="30000" />
-      <workItem from="1700485592261" duration="4238000" />
+      <workItem from="1700485592261" duration="6845000" />
+      <workItem from="1700542991259" duration="85000" />
+      <workItem from="1700620874157" duration="1571000" />
+      <workItem from="1700633817061" duration="635000" />
+      <workItem from="1700634777398" duration="1340000" />
+      <workItem from="1700637301266" duration="690000" />
+      <workItem from="1700688794738" duration="13001000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1699494843071</created>
@@ -136,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700486195786</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Thay đổi khung UI">
+      <option name="closed" value="true" />
+      <created>1700491407597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700491407597</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
     <MESSAGE value="my EV dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="my EV dictionary" />
+    <MESSAGE value="Thay đổi khung UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thay đổi khung UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

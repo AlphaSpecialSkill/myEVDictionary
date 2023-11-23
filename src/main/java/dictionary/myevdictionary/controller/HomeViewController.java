@@ -139,6 +139,7 @@ public class HomeViewController implements Initializable {
             throw new RuntimeException(e);
         }
 
+
         loadWordList();
         enterKeyPressed();
         searchbarInput();
