@@ -1,21 +1,17 @@
 package dictionary.myevdictionary.controller;
 
 import dictionary.myevdictionary.Model.Word;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
 
-import java.security.Key;
 import java.util.*;
 import java.util.stream.*;
 
@@ -26,7 +22,7 @@ import java.net.URL;
 
 import static dictionary.myevdictionary.Model.Dictionary.words;
 
-public class HomeViewController implements Initializable {
+public class SearchController implements Initializable {
     private static final String DATA_FILE_PATH = "src/main/resources/dictionary/myevdictionary/data/E_V.txt";
 
     private static final String SPLITTING_CHARACTERS = "<html>";

@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="Thay đổi khung UI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries_out.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/spelling.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="thêm phần 1 của đề bài">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/NewDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SettingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/history-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/InformationViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/BookmarkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SettingViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/search-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/information-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/bookmark-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/translate-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -65,27 +74,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/UET_courses/OOP/exercises/BTL/myEVDictionary/src/main/resources/dictionary/myevdictionary/data",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.40229884",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/UET_courses/OOP/exercises/BTL/myEVDictionary/src/main/resources/dictionary/myevdictionary/data&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.40229884&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\data" />
@@ -146,7 +155,9 @@
       <workItem from="1700633817061" duration="635000" />
       <workItem from="1700634777398" duration="1340000" />
       <workItem from="1700637301266" duration="690000" />
-      <workItem from="1700688794738" duration="13001000" />
+      <workItem from="1700688794738" duration="14163000" />
+      <workItem from="1700778636456" duration="9466000" />
+      <workItem from="1700865199357" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1699494843071</created>
@@ -171,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700491407597</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="thêm phần 1 của đề bài">
+      <option name="closed" value="true" />
+      <created>1700709876812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700709876812</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +211,8 @@
     <MESSAGE value="nothing" />
     <MESSAGE value="my EV dictionary" />
     <MESSAGE value="Thay đổi khung UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thay đổi khung UI" />
+    <MESSAGE value="thêm phần 1 của đề bài" />
+    <option name="LAST_COMMIT_MESSAGE" value="thêm phần 1 của đề bài" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane fx:id="homeViewPane" prefHeight="600.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.HomeViewController">
+<AnchorPane fx:id="homeViewPane" prefHeight="600.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.SearchController">
    <children>
       <HBox fx:id="hboxHome" prefHeight="600.0" prefWidth="820.0">
          <children>

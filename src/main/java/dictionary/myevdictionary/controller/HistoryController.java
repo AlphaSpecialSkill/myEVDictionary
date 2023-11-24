@@ -1,4 +1,4 @@
 package dictionary.myevdictionary.controller;
 
-public class SettingViewController {
+public class HistoryController {
 }
