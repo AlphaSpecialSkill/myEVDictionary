@@ -1,12 +1,13 @@
-abc,abc
+abc,xyz
 baby,zzz
-car,ô tô
+bicycle,xe đạp
 cat,mèo
 computer,máy tính
 dog,chó
 friend,bạn bè
 gha,asv
 hello,xin chào
+horse,con ngựa
 house,ngôi nhà
 human,con người
 phone,điện thoại

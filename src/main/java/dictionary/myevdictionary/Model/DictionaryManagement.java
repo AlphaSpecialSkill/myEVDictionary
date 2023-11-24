@@ -6,7 +6,15 @@ import java.util.*;
 public class DictionaryManagement extends Dictionary {
     private static final String IN_PATH = "src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt";
     private static final String OUT_PATH = "src/main/resource/dictionary/myevdictionary/data/oldData/dictionaries_out.txt";
-    public static List<String> keys = new ArrayList<>();
+    private static List<String> keys = new ArrayList<>();
+
+    public static List<String> getKeys() {
+        return keys;
+    }
+
+    public static void setKeys(List<String> keys) {
+        DictionaryManagement.keys = keys;
+    }
 
     public static void insertFromCommandLine() {
         Scanner intInput = new Scanner(System.in);
@@ -74,6 +82,7 @@ public class DictionaryManagement extends Dictionary {
         Word newWord = new Word();
         newWord.setWord(word);
         newWord.setDef(def);
+        words.put(word,newWord);
         updateWordToFile();
     }
 

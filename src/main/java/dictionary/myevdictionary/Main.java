@@ -12,7 +12,7 @@ import java.net.URL;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        AnchorPane root = FXMLLoader.load(getClass().getResource("controller/main-page.fxml"));
+        AnchorPane root = FXMLLoader.load(getClass().getResource("controller/main-view.fxml"));
         Scene scene = new Scene(root, 900, 600);
         stage.setTitle("Dictionary");
         stage.setScene(scene);

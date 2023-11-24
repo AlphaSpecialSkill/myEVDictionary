@@ -1,7 +1,5 @@
 package dictionary.myevdictionary.controller;
 
-import dictionary.myevdictionary.Main;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -17,61 +15,96 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
+
+    @FXML
+    protected AnchorPane mainPane;
+    @FXML
+    protected AnchorPane searchPane;
+    @FXML
+    protected AnchorPane bookmardPane;
+    @FXML
+    protected AnchorPane historyPane;
+    @FXML
+    protected AnchorPane translatePane;
+    @FXML
+    protected AnchorPane settingPane;
+
     @FXML
     protected BorderPane borderPane;
 
     @FXML
-    protected Button homebtn;
-
+    private SearchController searchController;
     @FXML
-    protected Button informationbtn;
-
+    private BookmarkController bookmarkController;
     @FXML
-    protected AnchorPane root;
-
-    @FXML
-    protected Button settingbtn;
-
-    @FXML
-    protected Button userbtn;
+    private HistoryController historyController;
 
     @FXML
     protected VBox navBar;
 
     @FXML
-    public void pressedHome(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("home-view.fxml"));
-        AnchorPane view = loader.load();
-        borderPane.setCenter(view);
+    protected Button searchbtn;
+    @FXML
+    protected Button bookmarkbtn;
+    @FXML
+    protected Button historybtn;
+    @FXML
+    protected Button translatebtn;
+    @FXML
+    protected Button settingbtn;
 
-        HomeViewController homeViewController = loader.getController();
-        homeViewController.setHomeViewPane(view);
-        homeViewController.initComponents(view);
-        homeViewController.readData();
-        homeViewController.loadWordList();
+    protected void setMainContent(AnchorPane anchorPane){
+        borderPane.setCenter(mainPane);
+    }
+
+    protected void resetStyleNav(){
+        searchbtn.getStyleClass().removeAll("active");
+        bookmarkbtn.getStyleClass().removeAll("active");
+        historybtn.getStyleClass().removeAll("active");
+        translatebtn.getStyleClass().removeAll("active");
+        settingbtn.getStyleClass().removeAll("active");
     }
 
     @FXML
-    void pressedUser(MouseEvent event) throws IOException {
-        AnchorPane userPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("user-view.fxml")));
-        borderPane.setCenter(userPage);
+    public void showSearchPane() throws IOException {
+        resetStyleNav();
+        searchbtn.getStyleClass().add("active");
+        searchController.initSearchListView();
+        setMainContent(searchPane);
     }
 
     @FXML
-    void pressedInformation(MouseEvent event) throws IOException {
-        AnchorPane informationPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("information-view.fxml")));
-        borderPane.setCenter(informationPage);
+    void showTranslatePane() throws IOException {
+        resetStyleNav();
+        translatebtn.getStyleClass().add("active");
+        setMainContent(translatePane);
     }
 
     @FXML
-    void pressedSetting(MouseEvent event) throws IOException {
-        AnchorPane settingPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("setting-view.fxml")));
-        borderPane.setCenter(settingPage);
+    void showBookmarkPane() throws IOException {
+        resetStyleNav();
+        bookmarkbtn.getStyleClass().add("active");
+        bookmarkController.initBookmarkListView();
+        setMainContent(bookmardPane);
+    }
+
+    @FXML
+    void showHistoryPane() throws IOException {
+        resetStyleNav();
+        historybtn.getStyleClass().add("active");
+        historyController.initBookmarkListView();
+        setMainContent(historyPane);
+    }
+    @FXML
+    void showSettingPane() throws IOException{
+        resetStyleNav();
+        settingbtn.getStyleClass().removeAll("active");
+        setMainContent(settingPane);
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("home-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("search-view.fxml"));
         AnchorPane view = null;
         try {
             view = loader.load();
@@ -80,14 +113,14 @@ public class MainController implements Initializable {
         }
         borderPane.setCenter(view);
 
-        HomeViewController homeViewController = loader.getController();
-        homeViewController.setHomeViewPane(view);
-        homeViewController.initComponents(view);
+        SearchController searchController = loader.getController();
+        searchController.setHomeViewPane(view);
+        searchController.initComponents(view);
         try {
-            homeViewController.readData();
+            searchController.readData();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        homeViewController.loadWordList();
+        searchController.loadWordList();
     }
 }

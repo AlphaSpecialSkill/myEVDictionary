@@ -1,4 +1,4 @@
 package dictionary.myevdictionary.controller;
 
-public class InformationViewController {
+public class BookmarkController {
 }
