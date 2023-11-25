@@ -4,24 +4,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
-
     @FXML
     protected AnchorPane mainPane;
     @FXML
     protected AnchorPane searchPane;
     @FXML
-    protected AnchorPane bookmardPane;
+    protected AnchorPane bookmarkPane;
     @FXML
     protected AnchorPane historyPane;
     @FXML
@@ -29,8 +26,10 @@ public class MainController implements Initializable {
     @FXML
     protected AnchorPane settingPane;
 
+
     @FXML
     protected BorderPane borderPane;
+
 
     @FXML
     private SearchController searchController;
@@ -39,8 +38,10 @@ public class MainController implements Initializable {
     @FXML
     private HistoryController historyController;
 
+
     @FXML
     protected VBox navBar;
+
 
     @FXML
     protected Button searchbtn;
@@ -85,7 +86,7 @@ public class MainController implements Initializable {
         resetStyleNav();
         bookmarkbtn.getStyleClass().add("active");
         bookmarkController.initBookmarkListView();
-        setMainContent(bookmardPane);
+        setMainContent(bookmarkPane);
     }
 
     @FXML
@@ -104,23 +105,40 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("search-view.fxml"));
-        AnchorPane view = null;
         try {
-            view = loader.load();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("search-view.fxml"));
+            searchPane = loader.load();
+            searchController = loader.getController();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        borderPane.setCenter(view);
-
-        SearchController searchController = loader.getController();
-        searchController.setHomeViewPane(view);
-        searchController.initComponents(view);
         try {
-            searchController.readData();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("bookmark-view.fxml"));
+            bookmarkPane = loader.load();
+            bookmarkController = loader.getController();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        searchController.loadWordList();
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("history-view.fxml"));
+            historyPane = loader.load();
+            historyController = loader.getController();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("setting-view.fxml"));
+            settingPane = loader.load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("translate-view.fxml"));
+            translatePane = loader.load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        searchbtn.getStyleClass().add("active");
+        mainPane.getChildren().setAll(searchPane);
     }
 }

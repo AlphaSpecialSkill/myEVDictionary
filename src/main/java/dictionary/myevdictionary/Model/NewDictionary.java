@@ -8,11 +8,12 @@ public class NewDictionary {
     private static final String SPLITTING_PATTERN = "<html>";
     private final String HISTORY_PATH;
     private final String BOOKMARK_PATH;
-    private List<String> newKeys = new ArrayList<>();
 
     private final Map<String, Word> newWords = new HashMap<>();
     private final Map<String, Word> historyNewWords = new HashMap<>();
     private final Map<String, Word> bookmarkNewWords = new HashMap<>();
+
+    private List<String> newKeys = new ArrayList<>(newWords.keySet());
 
     public NewDictionary(String path, String historyPath, String bookmarkPath) {
         PATH = path;
@@ -86,7 +87,6 @@ public class NewDictionary {
     }
 
     public void exportWordToHTMLFile(String path, String word) throws IOException {
-        getNewKeys().addAll(getNewWords().keySet());
         File file = new File(path);
         FileWriter fileWriter = new FileWriter(file, true);
 
@@ -132,7 +132,6 @@ public class NewDictionary {
     }
 
     public void removeWord(String word, String path, Map<String, Word> temp) throws IOException {
-        getNewKeys().addAll(temp.keySet());
         word = word.toLowerCase();
         int index = Collections.binarySearch(getNewKeys(), word);
         String removedKey = getNewKeys().get(index);
@@ -145,7 +144,6 @@ public class NewDictionary {
     }
 
     public void modifyWord(String word, String def) throws IOException {
-        getNewKeys().addAll(getNewWords().keySet());
         word = word.toLowerCase();
         def = def.toLowerCase();
         int pos = -1;
@@ -160,7 +158,6 @@ public class NewDictionary {
     }
 
     public int binaryCheck(int start, int end, String word) {
-        getNewKeys().addAll(getNewWords().keySet());
         if (end < start) {
             return -1;
         }
@@ -192,12 +189,12 @@ public class NewDictionary {
     }
 
     public int binaryLookup(int start, int end, String word, Map<String, Word> temp) {
-        getNewKeys().addAll(temp.keySet());
+        List<String> tempKeys = new ArrayList<>(temp.keySet());
         if (end < start) {
             return -1;
         }
         int mid = start + (end - start) / 2;
-        int compare = DictionaryManagement.isContain(word, getNewKeys().get(mid));
+        int compare = DictionaryManagement.isContain(word, tempKeys.get(mid));
         if (compare == -1) {
             return binaryLookup(start, mid - 1, word, temp);
         } else if (compare == 1) {

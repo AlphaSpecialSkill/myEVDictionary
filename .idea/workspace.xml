@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="thêm phần 1 của đề bài">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/NewDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/history-view.fxml" afterDir="false" />
+    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/GeneralController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/E_V_Recent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/V_E_Recent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/InformationViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/BookmarkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/NewDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/NewDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SettingViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/search-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/information-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/bookmark-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/translate-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/search-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/search-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/BookmarkList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/RecentList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/~$E_V.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +30,8 @@
       <list>
         <option value="CSS File" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,7 +76,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/UET_courses/OOP/exercises/BTL/myEVDictionary/src/main/resources/dictionary/myevdictionary/data&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -101,6 +97,7 @@
       <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\Data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\data" />
       <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary" />
       <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\View" />
     </key>
@@ -157,7 +154,10 @@
       <workItem from="1700637301266" duration="690000" />
       <workItem from="1700688794738" duration="14163000" />
       <workItem from="1700778636456" duration="9466000" />
-      <workItem from="1700865199357" duration="2247000" />
+      <workItem from="1700865199357" duration="4157000" />
+      <workItem from="1700869490459" duration="295000" />
+      <workItem from="1700888849266" duration="9651000" />
+      <workItem from="1700905342890" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1699494843071</created>
@@ -190,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700709876812</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sửa lại MainController và thay đổi các chức năng">
+      <option name="closed" value="true" />
+      <created>1700867676273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700867676273</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +220,8 @@
     <MESSAGE value="my EV dictionary" />
     <MESSAGE value="Thay đổi khung UI" />
     <MESSAGE value="thêm phần 1 của đề bài" />
-    <option name="LAST_COMMIT_MESSAGE" value="thêm phần 1 của đề bài" />
+    <MESSAGE value="Sửa lại MainController và thay đổi các chức năng" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sửa lại MainController và thay đổi các chức năng" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
