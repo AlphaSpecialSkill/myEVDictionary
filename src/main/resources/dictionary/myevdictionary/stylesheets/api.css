@@ -14,7 +14,6 @@
 
 .button-lang.active {
     -fx-background-color: white;
-    -fx-text-fill: -hover-text-color;
 }
 
 .button-trans{

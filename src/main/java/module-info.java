@@ -2,6 +2,7 @@ module dictionary.myevdictionary {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires jlayer;
 
     exports dictionary.myevdictionary.controller;
 

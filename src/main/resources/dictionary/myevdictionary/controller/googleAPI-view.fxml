@@ -15,7 +15,7 @@
                     <children>
                         <Button fx:id="langFromEng" mnemonicParsing="false" onAction="#eng1" prefHeight="30.0" prefWidth="100.0" styleClass="button-lang" text="English" />
                         <Button fx:id="langFromVie" mnemonicParsing="false" onAction="#vie1" prefHeight="30.0" prefWidth="100.0" styleClass="button-lang" text="Tiếng Việt" />
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="button-speaker" />
+                        <Button mnemonicParsing="false" onAction="#speak1" prefHeight="30.0" prefWidth="50.0" styleClass="button-speaker" />
                     </children>
                 </HBox>
                 <TextArea fx:id="srcText" prefHeight="220.0" prefWidth="800.0" />
@@ -27,7 +27,7 @@
                     <children>
                         <Button fx:id="langToVie" mnemonicParsing="false" onAction="#vie2" prefHeight="30.0" prefWidth="100.0" styleClass="button-lang" text="Tiếng Việt" />
                         <Button fx:id="langToEng" mnemonicParsing="false" onAction="#eng2" prefHeight="30.0" prefWidth="100.0" style="-fx-border-width: 1;" styleClass="button-lang" text="English" />
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="button-speaker" />
+                        <Button mnemonicParsing="false" onAction="#speak2" prefHeight="30.0" prefWidth="50.0" styleClass="button-speaker" />
                     </children>
                 </HBox>
                 <TextArea fx:id="destText" prefHeight="220.0" prefWidth="800.0" />

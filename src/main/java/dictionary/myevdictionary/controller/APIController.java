@@ -1,5 +1,6 @@
 package dictionary.myevdictionary.controller;
 
+import dictionary.myevdictionary.Model.TextToSpeech;
 import dictionary.myevdictionary.Model.TranslateAPI;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -163,6 +164,21 @@ public class APIController implements Initializable {
         destText.setStyle(""); // Reset màu sắc văn bản
         destText.setPromptText(""); // Xóa gợi ý nếu có
         errorOccurred = false; // Reset trạng thái lỗi
+    }
+    @FXML
+    public void speak1() throws IOException{
+        if ("vi".equals(langFrom)) {
+            TextToSpeech.playSoundGoogleTranslateViToEn(srcText.getText());
+        } else {
+            TextToSpeech.playSoundGoogleTranslateEnToVi(srcText.getText());
+        }
+    }
+    public void speak2(){
+        if ("eng".equals(langTo)) {
+            TextToSpeech.playSoundGoogleTranslateEnToVi(destText.getText());
+        } else {
+            TextToSpeech.playSoundGoogleTranslateViToEn(destText.getText());
+        }
     }
 
     @Override
