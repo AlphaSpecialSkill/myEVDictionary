@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="Thay đổi khung UI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryCommandLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/DictionaryManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/oldData/dictionaries_out.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/spelling.txt" afterDir="false" />
+    <list default="true" id="a20bd0f9-f8c8-4655-a310-0f1defe966e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Model/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/mainstyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/mainstyles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,159 +22,78 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="FxmlFile" />
-        <option value="package-info" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AlphaSpecialSkill&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="d624de19-d719-4712-bd65-548e698f38f4" />
-        <option name="url" value="https://github.com/AlphaSpecialSkill/myEVDictionary.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2XQDNCaTDYfoPzadibvwoA2WH2B" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2YbNzVSchjpJQX3IYPvOlkjQPxb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/UET_courses/OOP/exercises/BTL/myEVDictionary/src/main/resources/dictionary/myevdictionary/data",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.40229884",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/ideaProjects/javafx-sdk-21.0.1/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\data" />
-      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\Data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary" />
-      <recent name="E:\UET_courses\OOP\exercises\BTL\myEVDictionary\src\main\resources\dictionary\myevdictionary\View" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="dictionary.myevdictionary" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dictionary.myevdictionary.Main" />
       <module name="myEVDictionary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dictionary.myevdictionary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6b0dae6-aef9-42cf-a845-d62bb90186cb" name="Changes" comment="" />
-      <created>1698552369379</created>
+      <changelist id="a20bd0f9-f8c8-4655-a310-0f1defe966e8" name="Changes" comment="" />
+      <created>1700790582142</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698552369379</updated>
-      <workItem from="1698552370809" duration="10246000" />
-      <workItem from="1699455201846" duration="9728000" />
-      <workItem from="1699494794923" duration="1881000" />
-      <workItem from="1699500786514" duration="4261000" />
-      <workItem from="1699629919803" duration="93000" />
-      <workItem from="1699630157230" duration="659000" />
-      <workItem from="1699631875082" duration="5594000" />
-      <workItem from="1699667709872" duration="2608000" />
-      <workItem from="1699688258726" duration="13353000" />
-      <workItem from="1699839708768" duration="2997000" />
-      <workItem from="1699936315824" duration="2414000" />
-      <workItem from="1700094287887" duration="4548000" />
-      <workItem from="1700118047111" duration="1650000" />
-      <workItem from="1700120025238" duration="1427000" />
-      <workItem from="1700131137121" duration="1646000" />
-      <workItem from="1700144454348" duration="4288000" />
-      <workItem from="1700187120681" duration="5594000" />
-      <workItem from="1700197243043" duration="1437000" />
-      <workItem from="1700204638242" duration="1583000" />
-      <workItem from="1700273155506" duration="13000" />
-      <workItem from="1700446460953" duration="7893000" />
-      <workItem from="1700473897022" duration="1061000" />
-      <workItem from="1700474985535" duration="34000" />
-      <workItem from="1700475081930" duration="30000" />
-      <workItem from="1700485592261" duration="6845000" />
-      <workItem from="1700542991259" duration="85000" />
-      <workItem from="1700620874157" duration="1571000" />
-      <workItem from="1700633817061" duration="635000" />
-      <workItem from="1700634777398" duration="1340000" />
-      <workItem from="1700637301266" duration="690000" />
-      <workItem from="1700688794738" duration="13001000" />
+      <updated>1700790582142</updated>
     </task>
-    <task id="LOCAL-00001" summary="nothing">
-      <created>1699494843071</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699494843071</updated>
-    </task>
-    <task id="LOCAL-00002" summary="my EV dictionary">
-      <option name="closed" value="true" />
-      <created>1700486195786</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1700486195786</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Thay đổi khung UI">
-      <option name="closed" value="true" />
-      <created>1700491407597</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1700491407597</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -188,23 +106,14 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="nothing" />
-    <MESSAGE value="my EV dictionary" />
-    <MESSAGE value="Thay đổi khung UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thay đổi khung UI" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java</url>
+          <line>72</line>
           <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.RuntimeException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -17,6 +17,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
+    private Button currentlyChosenButton;
     @FXML
     protected BorderPane borderPane;
 
@@ -30,10 +31,10 @@ public class MainController implements Initializable {
     protected AnchorPane root;
 
     @FXML
-    protected Button settingbtn;
+    protected Button googlebtn;
 
     @FXML
-    protected Button userbtn;
+    protected Button historybtn;
 
     @FXML
     protected VBox navBar;
@@ -52,9 +53,9 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    void pressedUser(MouseEvent event) throws IOException {
-        AnchorPane userPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("user-view.fxml")));
-        borderPane.setCenter(userPage);
+    void pressedHistory(MouseEvent event) throws IOException {
+        AnchorPane historyPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("history-view.fxml")));
+        borderPane.setCenter(historyPage);
     }
 
     @FXML
@@ -64,9 +65,9 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    void pressedSetting(MouseEvent event) throws IOException {
-        AnchorPane settingPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("setting-view.fxml")));
-        borderPane.setCenter(settingPage);
+    void pressedGoogle(MouseEvent event) throws IOException {
+        AnchorPane APIpage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("googleAPI-view.fxml")));
+        borderPane.setCenter(APIpage);
     }
 
     @Override
@@ -90,4 +91,5 @@ public class MainController implements Initializable {
         }
         homeViewController.loadWordList();
     }
+
 }
