@@ -1,21 +1,19 @@
 package dictionary.myevdictionary.controller;
 
 import dictionary.myevdictionary.Model.Word;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
 
-import java.security.Key;
 import java.util.*;
 import java.util.stream.*;
 
@@ -26,10 +24,20 @@ import java.net.URL;
 
 import static dictionary.myevdictionary.Model.Dictionary.words;
 
-public class HomeViewController implements Initializable {
-    private static final String DATA_FILE_PATH = "src/main/resources/dictionary/myevdictionary/data/E_V.txt";
+public class HomeController implements Initializable {
+    private static final String EV_FILE_PATH = "src/main/resources/dictionary/myevdictionary/data/E_V.txt";
+    private static final String VE_FILE_PATH = "src/main/resources/dictionary/myevdictionary/data/V_E.txt";
 
     private static final String SPLITTING_CHARACTERS = "<html>";
+
+    @FXML
+    protected Button transLangVE;
+
+    @FXML
+    protected Button transLangEV;
+
+    @FXML
+    protected Label definitionWord;
 
     @FXML
     protected VBox content;
@@ -51,6 +59,8 @@ public class HomeViewController implements Initializable {
 
     @FXML
     protected WebView definitionView;
+    protected static boolean isEV;
+    protected static boolean isOnEdit;
 
     public AnchorPane getHomeViewPane() {
         return homeViewPane;
@@ -116,8 +126,8 @@ public class HomeViewController implements Initializable {
         this.listView.getItems().addAll(words.keySet());
     }
 
-    public void readData() throws IOException {
-        FileReader fis = new FileReader(DATA_FILE_PATH);
+    public void readEVData() throws IOException {
+        FileReader fis = new FileReader(EV_FILE_PATH);
         BufferedReader br = new BufferedReader(fis);
         String line;
         while ((line = br.readLine()) != null) {
@@ -129,12 +139,67 @@ public class HomeViewController implements Initializable {
         }
     }
 
+    public void readVEData() throws IOException {
+        FileReader fis = new FileReader(VE_FILE_PATH);
+        BufferedReader br = new BufferedReader(fis);
+        String line;
+        while ((line = br.readLine()) != null) {
+            String[] parts = line.split(SPLITTING_CHARACTERS);
+            String word = parts[0];
+            String definition = SPLITTING_CHARACTERS + parts[1];
+            Word wordObj = new Word(word, definition);
+            words.put(word, wordObj);
+        }
+    }
+
+    public void setLanguage() throws IOException {
+        if (!isEV) {
+            transLangEV.setVisible(false);
+            transLangVE.setVisible(true);
+            clearPane();
+            readVEData();
+        } else {
+            transLangEV.setVisible(true);
+            transLangVE.setVisible(false);
+            clearPane();
+            readEVData();
+        }
+    }
+    public void clearPane() throws IOException {
+        searchbar.clear();
+        definitionView.getEngine().loadContent("");
+        definitionWord.getText();
+        listView.getItems().clear();
+    }
+
+    public void clickTransBtn() throws IOException {
+        isEV = !isEV;
+        setLanguage();
+    }
+
+    public void clickSpeakerBtn() {
+
+    }
+
+    public void clickEditBtn() {
+
+    }
+
+    public void clickRemoveBtn() {
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         initComponents(homeViewPane);
         try {
-            readData();
+            readEVData();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            readVEData();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

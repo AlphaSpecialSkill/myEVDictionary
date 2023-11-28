@@ -41,15 +41,8 @@ public class MainController implements Initializable {
 
     @FXML
     public void pressedHome(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("home-view.fxml"));
-        AnchorPane view = loader.load();
-        borderPane.setCenter(view);
-
-        HomeViewController homeViewController = loader.getController();
-        homeViewController.setHomeViewPane(view);
-        homeViewController.initComponents(view);
-        homeViewController.readData();
-        homeViewController.loadWordList();
+        AnchorPane homePage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("home-view.fxml")));
+        borderPane.setCenter(homePage);
     }
 
     @FXML
@@ -59,8 +52,8 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    void pressedInformation(MouseEvent event) throws IOException {
-        AnchorPane informationPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("information-view.fxml")));
+    void pressedBookmark(MouseEvent event) throws IOException {
+        AnchorPane informationPage = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("bookmark-view.fxml")));
         borderPane.setCenter(informationPage);
     }
 
@@ -80,16 +73,6 @@ public class MainController implements Initializable {
             throw new RuntimeException(e);
         }
         borderPane.setCenter(view);
-
-        HomeViewController homeViewController = loader.getController();
-        homeViewController.setHomeViewPane(view);
-        homeViewController.initComponents(view);
-        try {
-            homeViewController.readData();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        homeViewController.loadWordList();
     }
 
 }

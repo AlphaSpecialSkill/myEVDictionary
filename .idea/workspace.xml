@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a20bd0f9-f8c8-4655-a310-0f1defe966e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a20bd0f9-f8c8-4655-a310-0f1defe966e8" name="Changes" comment="Update TextToSpeech to project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/InformationViewController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/SettingViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/UserViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/information-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/main-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/controller/setting-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/mainstyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/mainstyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/data/~$E_V.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dictionary/myevdictionary/stylesheets/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,7 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2YbNzVSchjpJQX3IYPvOlkjQPxb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,13 +61,16 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/ideaProjects/javafx-sdk-21.0.1/lib&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dictionary.myevdictionary.Main" />
@@ -93,6 +100,39 @@
       <option name="presentableId" value="Default" />
       <updated>1700790582142</updated>
     </task>
+    <task id="LOCAL-00001" summary="Change UI home">
+      <option name="closed" value="true" />
+      <created>1701009593567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701009593567</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change UI home">
+      <option name="closed" value="true" />
+      <created>1701009735912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701009735912</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update TextToSpeech to project">
+      <option name="closed" value="true" />
+      <created>1701011432638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701011432638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update TextToSpeech to project">
+      <option name="closed" value="true" />
+      <created>1701011442945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701011442945</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,21 +140,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dictionary/myevdictionary/controller/MainController.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change UI home" />
+    <MESSAGE value="Update TextToSpeech to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update TextToSpeech to project" />
   </component>
 </project>

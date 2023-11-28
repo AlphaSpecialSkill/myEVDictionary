@@ -11,21 +11,24 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane fx:id="homeViewPane" prefHeight="600.0" prefWidth="820.0" stylesheets="@../stylesheets/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.HomeViewController">
+<AnchorPane fx:id="homeViewPane" prefHeight="600.0" prefWidth="820.0" stylesheets="@../stylesheets/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.myevdictionary.controller.HomeController">
    <children>
       <HBox fx:id="hboxHome" prefHeight="600.0" prefWidth="820.0">
          <children>
             <VBox fx:id="search" prefHeight="600.0" prefWidth="270.0">
                <children>
-                  <TextField fx:id="searchbar" prefHeight="30.0" prefWidth="250.0">
-                     <VBox.margin>
-                        <Insets left="10.0" right="10.0" top="20.0" />
-                     </VBox.margin>
-                     <padding>
-                        <Insets bottom="15.0" />
-                     </padding>
-                  </TextField>
-                  <ListView fx:id="listView" prefHeight="525.0" prefWidth="250.0">
+                  <AnchorPane prefHeight="58.0" prefWidth="227.0">
+                     <children>
+                        <TextField fx:id="searchbar" layoutX="58.0" layoutY="7.0" prefHeight="40.0" prefWidth="190.0">
+                           <padding>
+                              <Insets bottom="15.0" />
+                           </padding>
+                        </TextField>
+                        <Button fx:id="transLangEV" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickTransBtn" prefHeight="40.0" prefWidth="40.0" styleClass="button-EV" />
+                        <Button fx:id="transLangVE" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickTransBtn" prefHeight="40.0" prefWidth="40.0" styleClass="button-VE" />
+                     </children>
+                  </AnchorPane>
+                  <ListView fx:id="listView" prefHeight="556.0" prefWidth="240.0">
                      <VBox.margin>
                         <Insets bottom="20.0" left="10.0" right="10.0" top="5.0" />
                      </VBox.margin></ListView>
@@ -38,9 +41,18 @@
                <children>
                   <AnchorPane prefHeight="600.0" prefWidth="550.0">
                      <children>
-                        <HBox layoutX="14.0" layoutY="25.0" prefHeight="50.0" prefWidth="150.0">
+                        <HBox layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="150.0">
                            <children>
-                              <Label fx:id="wordText" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="150.0" text="Nghĩa của từ">
+                              <Label fx:id="wordText" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="150.0" text="Nghĩa của từ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="14.0" layoutY="44.0" prefHeight="30.0" prefWidth="150.0">
+                           <children>
+                              <Label fx:id="definitionWord" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="150.0">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
                                  </font>
@@ -52,11 +64,12 @@
                               <WebView fx:id="definitionView" prefHeight="495.0" prefWidth="530.0" />
                            </children>
                         </AnchorPane>
-                        <HBox layoutX="380.0" layoutY="25.0" prefHeight="50.0" prefWidth="150.0">
+                        <HBox layoutX="370.0" layoutY="35.0" prefHeight="40.0" prefWidth="160.0">
                            <children>
-                              <Button fx:id="bookmarkButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button-bookmark" />
-                              <Button fx:id="editButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button-edit" />
-                              <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="button-delete" />
+                              <Button fx:id="pronounce" mnemonicParsing="false" onAction="#clickSpeakerBtn" prefHeight="40.0" prefWidth="40.0" styleClass="button-pronounce" />
+                              <Button fx:id="bookmarkButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="button-bookmark" />
+                              <Button fx:id="editButton" mnemonicParsing="false" onAction="#clickEditBtn" prefHeight="40.0" prefWidth="40.0" styleClass="button-edit" />
+                              <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#clickRemoveBtn" prefHeight="40.0" prefWidth="40.0" styleClass="button-delete" />
                            </children>
                         </HBox>
                      </children>
